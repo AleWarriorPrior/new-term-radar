@@ -1,6 +1,32 @@
+<div align="center">
+
+<img src="docs/logo.svg" width="128" alt="new-term-radar logo: a radar sweep catching a new blip">
+
 # new-term-radar
 
-[中文说明](README.zh-CN.md)
+**Catch the names AI people are about to search for, the day they appear, before keyword tools list them.**
+
+[![PyPI](https://img.shields.io/pypi/v/new-term-radar?color=0ea5e9&label=PyPI)](https://pypi.org/project/new-term-radar/)
+[![Python](https://img.shields.io/badge/python-3.10%2B-3776ab)](https://pypi.org/project/new-term-radar/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-eab308)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/zhuyansen/new-term-radar?logo=github&color=0f172a)](https://github.com/zhuyansen/new-term-radar/stargazers)
+[![Forks](https://img.shields.io/github/forks/zhuyansen/new-term-radar?logo=github&color=0f172a)](https://github.com/zhuyansen/new-term-radar/network/members)
+[![Downloads](https://img.shields.io/pepy/dt/new-term-radar?color=22c55e&label=downloads)](https://pepy.tech/projects/new-term-radar)
+[![Last commit](https://img.shields.io/github/last-commit/zhuyansen/new-term-radar?color=64748b)](https://github.com/zhuyansen/new-term-radar/commits/main)
+
+[![MCP Registry](https://img.shields.io/badge/MCP%20Registry-io.github.zhuyansen%2Fnew--term--radar-0ea5e9)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.zhuyansen/new-term-radar)
+[![Tessl registry](https://img.shields.io/badge/Tessl-registry-22c55e)](https://tessl.io/registry/skills/github/zhuyansen/new-term-radar)
+[![LobeHub](https://lobehub.com/badge/mcp/zhuyansen-new-term-radar)](https://lobehub.com/mcp/zhuyansen-new-term-radar)
+[![Security-graded by Agent Skills Hub](https://agentskillshub.top/badge/zhuyansen/new-term-radar.svg)](https://agentskillshub.top/skill/zhuyansen/new-term-radar/)
+[![Cursor Directory](https://img.shields.io/badge/Cursor%20Directory-new--term--radar-000000)](https://cursor.directory/plugins/new-term-radar)
+[![ClawHub](https://img.shields.io/badge/ClawHub-new--term--radar-f97316)](https://clawhub.ai/skills/new-term-radar)
+[![skills.sh](https://img.shields.io/badge/skills.sh-zhuyansen%2Fnew--term--radar-0f172a)](https://skills.sh/zhuyansen/new-term-radar)
+
+⭐ **700+ stars on its first day, 1,000 in just over three** · on PyPI, the official MCP Registry, Cursor Directory, LobeHub, Tessl, ClawHub and skills.sh
+
+[Quick start](#quick-start) · [What it reads](#what-it-reads) · [The keyword table](#the-keyword-table) · [Agents and MCP](#use-it-from-an-agent-skills-and-an-mcp-server) · [config.json](#configjson) · [中文说明](README.zh-CN.md)
+
+</div>
 
 A daily report of the names that are starting to surge in AI: new models, products, tools and repos, caught where they are said first, before they show up in keyword tools.
 
@@ -353,6 +379,10 @@ The tests cover the logic (name extraction, scoring, the store, the reports) and
 - [饭特稀 | Fentix @fantexi997](https://x.com/fantexi997) for [GoAnyAPI](https://goanyapi.com), the optional source of related queries and one-country Trends series.
 
 The diagram is drawn by `docs/make_diagram.py` (needs `rsvg-convert` and `ffmpeg`).
+
+## Star history
+
+[![Star history](https://api.star-history.com/svg?repos=zhuyansen/new-term-radar&type=Date)](https://star-history.com/#zhuyansen/new-term-radar&Date)
 
 ## License
 
