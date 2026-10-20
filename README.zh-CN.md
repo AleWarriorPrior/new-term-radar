@@ -302,17 +302,14 @@ npx skills add zhuyansen/new-term-radar
 
 ### MCP 服务器
 
-给支持 MCP 的客户端用（Claude Code、Cursor、Claude Desktop）：
-
-```bash
-pip install "new-term-radar[mcp]"
-```
+给支持 MCP 的客户端用（Claude Code、Cursor、Claude Desktop）。装了 [uv](https://docs.astral.sh/uv/) 就什么都不用先装：
 
 ```json
 {
   "mcpServers": {
     "new-term-radar": {
-      "command": "new-term-radar-mcp",
+      "command": "uvx",
+      "args": ["--with", "mcp", "new-term-radar", "mcp"],
       "env": {
         "AISA_API_KEY": "...",
         "RADAR_CONFIG": "/绝对路径/config.json",
@@ -322,6 +319,8 @@ pip install "new-term-radar[mcp]"
   }
 }
 ```
+
+没有 uv：先 `pip install "new-term-radar[mcp]"`，再把 `"command"` 改成 `"new-term-radar-mcp"`、去掉 `args`。上面的 Claude Code 插件已经自带这个服务器：启用插件时 Claude Code 会让你填 AIsa key（GoAnyAPI key 可选），存进系统钥匙串；服务器用示例配置，状态存在插件自己的数据目录里。
 
 | 工具 | 返回什么 | 花费和耗时 |
 |---|---|---|

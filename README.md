@@ -307,17 +307,14 @@ Then ask your agent for "today's new AI keywords", "an AI listening report" or "
 
 ### MCP server
 
-For clients that speak MCP (Claude Code, Cursor, Claude Desktop):
-
-```bash
-pip install "new-term-radar[mcp]"
-```
+For clients that speak MCP (Claude Code, Cursor, Claude Desktop). With [uv](https://docs.astral.sh/uv/) there is nothing to install first:
 
 ```json
 {
   "mcpServers": {
     "new-term-radar": {
-      "command": "new-term-radar-mcp",
+      "command": "uvx",
+      "args": ["--with", "mcp", "new-term-radar", "mcp"],
       "env": {
         "AISA_API_KEY": "...",
         "RADAR_CONFIG": "/absolute/path/to/config.json",
@@ -327,6 +324,8 @@ pip install "new-term-radar[mcp]"
   }
 }
 ```
+
+Without uv: `pip install "new-term-radar[mcp]"`, then `"command": "new-term-radar-mcp"` and no `args`. The Claude Code plugin above brings this server with it: when the plugin is enabled, Claude Code asks for your AIsa key (and, optionally, a GoAnyAPI key) and keeps them in the system keychain; the server reads the example config and keeps its state in the plugin's data folder.
 
 | Tool | What it returns | Cost and time |
 |---|---|---|
